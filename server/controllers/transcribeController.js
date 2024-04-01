@@ -1,7 +1,7 @@
-const deepspeech = require('deepspeech');
+const DeepSpeech = require('deepspeech');
 
-const modelPath = '../deepspeech-0.9.3-models.pbmm';
-const scorerPath = '../deepspeech-0.9.3-models.scorer';
+const modelPath = '../models/deepspeech-0.9.3-models.pbmm';
+const scorerPath = '../models/deepspeech-0.9.3-models.scorer';
 const model = new DeepSpeech.Model(modelPath);
 model.enableExternalScorer(scorerPath);
 
