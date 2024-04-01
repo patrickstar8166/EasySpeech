@@ -16,7 +16,7 @@ app.enable("trust proxy");
 app.disable("x-powered-by");
 //connectDB();
 
-app.use("/test", require("./routes/test"));
+app.use("/transcribe", require("./routes/transcribe"));
 
 app.use("/", function (req, res) {
   res.json({ error: "endpoint not found" });
